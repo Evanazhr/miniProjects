@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MonoAlphabetic</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <span class="half-blue-bg"></span>
+      <div class="mono-alphabetic">
+        <h1 class="title">Mono-alphabetic Subtitution Ciper</h1>
+        <div class="input">
+          <label for="plain-text">Plain Text</label>
+          <textarea
+            name="plain-text"
+            id="plain-text"
+            class="plain-text"
+            placeholder="Masukkan Plain Text"
+          ></textarea>
+        </div>
+        <div class="input">
+          <label for="input-key">Key</label>
+          <input type="text" id="input-key" class="input-key" maxlength="26" placeholder="Masukkan Key(Maks 26 Karakter)"/>
+          <button class="generate-key-btn">Generate Key</button>
+        </div>
+        <div class="key-table">
+          <table>
+            <tr class="alphabet-row"></tr>
+            <tr class="key-row"></tr>
+          </table>
+        </div>
+        <button class="start-subtitution-btn">Start Subtitution</button>
+        <label for=""></label>
+        <div>
+          <p>Output :</p>
+          <div class="output"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
