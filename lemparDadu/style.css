@@ -1,0 +1,81 @@
+*, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dice-container{
+    min-height: 100vh;
+    width: 90%;
+    max-width: 500px;
+    margin: 8px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+.dice{
+    border: 4px solid black;
+    padding: 12px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.dice-img{
+    width: 50%;
+    max-width: 200px;
+ 
+    border-radius: 10px;
+}
+
+.dice-log{
+    max-width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+    scrollbar-width: none;
+    background-color: blue;
+    margin-top: 24px;
+}
+
+.dice-log-item{
+    width: 24px;
+    height: 24px;
+}
+
+
+.roll-button{
+    padding: 8px;
+    border-radius: 4px;
+    border: 4px solid black;
+    box-shadow: 10px 10px 0 black;
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-color: white;
+
+}
+
+.roll-button img{
+    width: 24px;
+}
+
+.roll-button:hover{
+    top: 5px;
+    left: 5px;
+    box-shadow: 5px 5px 0 black;
+    cursor: pointer;
+}
+
+
