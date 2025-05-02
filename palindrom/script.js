@@ -8,19 +8,13 @@ function palindromChecker(text) {
   console.log("text reverse : " + textReverse);
 
   if(text){
-      if (text === textReverse) {
-        output.innerHTML = `
-        <p class="output-text">Input : ${text} </p>
-        <p class="output-text">Reverse : ${textReverse} </p>
-        <p class="output-text">Palindrom 👍</p>
-        `;
-        console.log("Palindrom 👍");
-      } else {
-        output.innerHTML = `<p class="output-text">Input : ${text} </p>
-        <p class="output-text">Reverse : ${textReverse} </p>
-        <p class="output-text">Bukan Palindrom 👎</p>`;
-        console.log("Bukan Palindrom 👎");
-      }
+    const outputText = `
+        <p class="output-text"><span class="bold">Input : </span> ${text} </p>
+        <p class="output-text"><span class="bold">Reverse : </span> ${textReverse} </p>        `
+
+
+        text === textReverse ? output.innerHTML = outputText + `<p class="output-text">Palindrom 👍</p>` : output.innerHTML = outputText + `<p class="output-text">Bukan Palindrom 👎</p>` 
+
   }else{
     output.innerHTML = `<p class="output-warning">Masukkan text dulu cuy...</p>`
     
@@ -43,23 +37,16 @@ const info = document.querySelector(".palindrom-info")
 
 info.addEventListener("click", () => {
     alert(`Palindrom adalah sebuah kata, frasa, angka, atau urutan karakter lainnya yang dapat dibaca sama dari depan maupun belakang. Dalam kata lain, jika Anda membalikkan urutan karakter tersebut, hasilnya tetap sama. Palindrom sering digunakan dalam berbagai konteks, termasuk dalam bahasa, matematika, dan pemrograman.
-
         Contoh Palindrom:
         Kata:
         - "radar"
         - "level"
-        - "madam"
-        - "civic"
-        
         Frasa (dengan mengabaikan spasi dan tanda baca):
         - "A man, a plan, a canal, Panama!"
         - "Was it a car or a cat I saw?"
-        
         Angka:
         - 121
-        - 12321
-        - 45654
-        
+        - 12321        
         Cara Memeriksa Palindrom:
         Untuk memeriksa apakah sebuah string adalah palindrom, Anda dapat membandingkan karakter dari awal dan akhir string, kemudian bergerak ke arah tengah. Jika semua pasangan karakter yang dibandingkan sama, maka string tersebut adalah palindrom.`);
 })

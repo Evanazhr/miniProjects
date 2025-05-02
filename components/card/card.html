@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+  </head>
+  <style>
+    *,
+    html {
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      width: 90%;
+      justify-content: center;
+      gap: 24px;
+      min-height: 100vh;
+    }
+
+    .card {
+      margin: 24px 0;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0px 10px 10px gray;
+      max-width: 250px;
+      border: 1px solid gray;
+    }
+
+    .card-img-top {
+      height: 150px;
+      width: 100%;
+      object-position: center;
+      object-fit: cover;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+
+    .card:last-child .card-img-top {
+      object-position: top;
+    }
+
+    .card-title {
+      margin: 8px 0;
+      font-size: 18px;
+    }
+
+    .card-text {
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+
+    .card-body {
+      padding: 0 12px 16px;
+    }
+
+    .card-button {
+      background-color: blue;
+      color: white;
+      padding: 8px;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="card" style="width: 18rem">
+        <img src="./image-placeholder.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="card-button">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="./image-placeholder.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="card-button">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="./image-placeholder.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="card-button">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="./image-placeholder.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="card-button">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://imgs.search.brave.com/mTtxp1_phTDceoude47z1IUOu3TLk9zwpALhApyJDUU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/d2lsZG5hdHVyZWlt/YWdlcy5jb20vaW1h/Z2VzLzY0MC8wNzA1/MjAtMDA1LUJyaWRn/ZS1Nb3VudGFpbi5q/cGc"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="card-button">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

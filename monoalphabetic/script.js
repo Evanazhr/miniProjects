@@ -4,7 +4,7 @@ const plainText = document.querySelector(".plain-text");
 const inputKey = document.querySelector(".input-key");
 const KeyRow = document.querySelector(".key-row");
 const generateKeyBtn = document.querySelector(".generate-key-btn");
-const startSubtitutionBtn = document.querySelector(".start-subtitution-btn");
+const startSubtitutionBtn = document.querySelector(".encrypt-btn");
 const alphabetRow = document.querySelector(".alphabet-row");
 const output = document.querySelector(".output")
 
@@ -14,7 +14,13 @@ for (let i = 0; i < alphabet.length; i++) {
   const row = document.createElement("td"); // Buat elemen <td>
   row.textContent = alphabet[i]; // Set textContent ke huruf yang sesuai
   alphabetRow.appendChild(row); // Tambahkan <td> ke baris
+  
+  const row2 = document.createElement("td"); // Buat elemen <td>
+  row2.textContent = ""; // Set textContent ke huruf yang sesuai
+  KeyRow.appendChild(row2); // Tambahkan <td> ke baris
 }
+
+
 
 function generateKey(value) {
   const arrayKey = value.split(" ").join("").toUpperCase().split("");
@@ -39,12 +45,13 @@ function generateKey(value) {
 
   // create key row
   KeyRow.innerHTML = "";
-  for (let i = 0; i < fixKey.length; i++) {
-    const row = document.createElement("td");
-    row.textContent = fixKey[i];
-    KeyRow.appendChild(row);
-  }
 
+  fixKey.forEach((key) => {
+    const row = document.createElement("td");
+    row.textContent = key;
+    KeyRow.appendChild(row);  
+  })
+  
   //   reassign global key
   key = fixKey.join("");
   console.log("Key = " + key);

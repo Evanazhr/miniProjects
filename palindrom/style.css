@@ -105,3 +105,14 @@
 .output-text:last-child{
     font-weight: bold;
 }
+
+p{
+    display: flex;
+    flex: 1 1 100%;
+    word-break: break-all;
+    line-height: 1.5;
+}
+
+.bold{
+    font-weight: bold;
+}

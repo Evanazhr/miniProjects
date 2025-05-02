@@ -39,6 +39,7 @@ html {
   background-color: white;
   margin: 24px 0;
 }
+
 .title {
   text-align: center;
   margin-bottom: 24px;
@@ -48,6 +49,10 @@ html {
   display: flex;
   flex-direction: column;
   margin-bottom: 12px;
+}
+
+.input label{
+    font-weight: bold;
 }
 
 .plain-text {
@@ -102,6 +107,7 @@ td {
   border-right: 1px solid skyblue;
   border-bottom: 1px solid skyblue;
   padding: 8px;
+  height: 30px;
 }
 
 .alphabet-row td:last-child,
@@ -113,7 +119,7 @@ td {
   border-bottom: 0;
 }
 
-.start-subtitution-btn {
+.encrypt-btn {
   width: 100%;
   color: black;
   background-color: greenyellow;
@@ -124,7 +130,7 @@ td {
   font-weight: bold;
 }
 
-.start-subtitution-btn:hover {
+.encrypt-btn:hover {
   cursor: pointer;
   background-color: rgb(8, 199, 8);
   color: white;
